@@ -27,6 +27,16 @@
         margin: 0 auto;
          animation: Movement 1.5s ease-in-out infinite alternate;
          transition: transform 1.7s ease-in-out;
+
+        @keyframes Movement {
+            from{
+                transform: translateY(-10px);
+            }
+            to{
+                transform: translateY(10px);
+            }
+        }
+        
         #React{
             animation: rotation 10s infinite linear;
             transform-origin: center;
@@ -55,16 +65,5 @@
               }
         }
 
-    }
-
-
-
-    @keyframes Movement {
-        from{
-            transform: translateY(-10px);
-        }
-        to{
-            transform: translateY(10px);
-        }
     }
 }
