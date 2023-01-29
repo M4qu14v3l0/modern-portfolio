@@ -11,7 +11,7 @@ export default function Social () {
         {ico: LinkedInIcon, label:'@marcelo', url:'https://www.linkedin.com/in/marcelo-llerena-paricahua-20604323a'},
         {ico: InstagramIcon, label:'@marcelo_coding', url:'https://www.instagram.com/marcelo_coding/'},
         {ico: GitHubIcon, label:'@m4qu14v3l0', url:'https://github.com/M4qu14v3l0'},
-        {ico: SendIcon, label:'@marcelo', url:'mailto:marcelo.gabriel.llerena@gmail.com'},
+        {ico: SendIcon, label:'@marcelo.gabriel', url:'mailto:marcelo.gabriel.llerena@gmail.com'},
 
     ]
 
