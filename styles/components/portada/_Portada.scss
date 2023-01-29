@@ -1,0 +1,164 @@
+.portada-container{
+
+    margin: 0 auto;
+    width: 75%;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr ;
+
+    padding: 0 50px;
+    align-items: center;
+
+    transition: 0.5s;
+
+
+
+    .astronaut-img{
+        height: 400px;
+        width: 400px;
+        animation: Movement 2s ease-in-out infinite alternate;
+        transition: transform 1.7s ease-in-out;
+    
+    }
+
+    @keyframes Movement {
+        from{
+            transform: translateY(-50px);
+        }
+        to{
+            transform: translateY(50px);
+        }
+    }
+
+    
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    .line-1{
+        display: block;
+        color: #f72585;
+        position: relative;
+        top: 50%;  
+
+        border-right: 2px solid #f72585;
+        font-size: 180%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%);    
+    }
+    
+    /* Animation */
+    .anim-typewriter{
+        animation: typewriter 1.5s steps(15) 1s 1 normal both,
+                    blinkTextCursor 500ms steps(44) infinite normal;
+    }
+    @keyframes typewriter{
+        from{width: 0;}
+        to{width: 5.5em;}
+    }
+    @keyframes blinkTextCursor{
+        from{border-right-color: #f72585;}
+        to{border-right-color: transparent;}
+    }
+    
+        
+
+        h1{
+            font-size: 55px;
+            color: white;
+        }
+        p{  
+            font-size: 18px;
+            word-spacing: 2px;
+            color: white;
+        }
+        .connect-link-container{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            gap: 20px;
+            font-size: 20px;
+            height: 50px;
+            width: 250px;
+            justify-content: center;
+            transition: 0.5s;
+            border: 1px solid white;
+
+            &:hover{
+                background: #f72585;
+                letter-spacing: 0.10em;
+                box-shadow: 0 0 35px #f72585;
+                -webkit-animation: vibrate-1 0.3s linear infinite both;
+                animation: vibrate-1 0.3s linear infinite both;
+                border: none;
+            }
+
+            .arrow-ico{
+                font-size: 35px;
+            }
+
+            @-webkit-keyframes vibrate-1 {
+                0% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+                20% {
+                  -webkit-transform: translate(-2px, 2px);
+                          transform: translate(-2px, 2px);
+                }
+                40% {
+                  -webkit-transform: translate(-2px, -2px);
+                          transform: translate(-2px, -2px);
+                }
+                60% {
+                  -webkit-transform: translate(2px, 2px);
+                          transform: translate(2px, 2px);
+                }
+                80% {
+                  -webkit-transform: translate(2px, -2px);
+                          transform: translate(2px, -2px);
+                }
+                100% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+              }
+              @keyframes vibrate-1 {
+                0% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+                20% {
+                  -webkit-transform: translate(-2px, 2px);
+                          transform: translate(-2px, 2px);
+                }
+                40% {
+                  -webkit-transform: translate(-2px, -2px);
+                          transform: translate(-2px, -2px);
+                }
+                60% {
+                  -webkit-transform: translate(2px, 2px);
+                          transform: translate(2px, 2px);
+                }
+                80% {
+                  -webkit-transform: translate(2px, -2px);
+                          transform: translate(2px, -2px);
+                }
+                100% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+              }
+              
+        }
+    }
+
+}

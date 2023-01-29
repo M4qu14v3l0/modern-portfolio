@@ -1,0 +1,22 @@
+
+
+// GENERAL
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+        background-color: var(--background-one);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--text-one);
+        border-radius: 3rem;
+    }
+}

@@ -1,0 +1,25 @@
+nav{
+
+    height: 100px;
+
+    background-color: #1d1d1d;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 50px;
+        font-size: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+}

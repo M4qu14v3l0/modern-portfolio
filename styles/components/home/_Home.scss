@@ -1,0 +1,12 @@
+.home-container{
+    background-image: url('../../../app/assets/spacebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
