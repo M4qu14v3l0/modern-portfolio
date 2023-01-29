@@ -19,7 +19,7 @@ export default function Social () {
         <section>
             <h3>On the web</h3>
 
-
+            <div className='social-icons-container'>
             {
                 social.map( item => (
                     <Link href={item.url} key={item.label} target="_blank" className='social-ico-item'>
@@ -28,6 +28,7 @@ export default function Social () {
                     </Link>
                 ))
             }
+            </div>
         </section>
     )
 }

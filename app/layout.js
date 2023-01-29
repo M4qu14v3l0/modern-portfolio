@@ -2,6 +2,9 @@
 
 //  Styles scss
 import "../styles/globals.scss";
+
+// Components
+import Footer from "./components/footer/Footer";
 import Navigation from "./components/navigation/Navigation";
 
 
@@ -16,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   )

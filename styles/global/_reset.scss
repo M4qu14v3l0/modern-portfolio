@@ -23,6 +23,9 @@
 
 body{
     background-color:  #1b1c1e;
+    
+    display: flex;
+    flex-direction: column;
 
     h1{
         font-size: 36px;
