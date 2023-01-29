@@ -1,8 +1,8 @@
+@import '../../global/mixins';
+
 nav{
 
     height: 100px;
-
-    background-color: #1d1d1d;
 
     display: flex;
 
@@ -20,6 +20,6 @@ nav{
     }
     a{
         text-decoration: none;
-        color: aliceblue;
+        color: $titles-color;
     }
 }

@@ -1,0 +1,121 @@
+ @import '../../global/mixins';
+
+.connect-link-container{
+
+    width: 180px;
+    padding: 0px 16px;
+    margin-top: 30px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    text-decoration: none;
+    color: $p-color;
+    font-size: 16px;
+
+    transition: 0.5s;
+    border: 1px solid $underline-color;
+
+    &:hover{
+        background: $primary-color-text;
+        letter-spacing: 0.10em;
+        box-shadow: 0 0 35px $primary-color-text;
+        -webkit-animation: vibrate-1 0.3s linear infinite both;
+        animation: vibrate-1 0.3s linear infinite both;
+        border: none;
+    }
+
+    .arrow-ico{
+        color: $p-color;
+        font-size: 20px;
+    }
+
+    @-webkit-keyframes vibrate-1 {
+        0% {
+            -webkit-transform: translate(0);
+                    transform: translate(0);
+        }
+        20% {
+            -webkit-transform: translate(-2px, 2px);
+                    transform: translate(-2px, 2px);
+        }
+        40% {
+            -webkit-transform: translate(-2px, -2px);
+                    transform: translate(-2px, -2px);
+        }
+        60% {
+            -webkit-transform: translate(2px, 2px);
+                    transform: translate(2px, 2px);
+        }
+        80% {
+            -webkit-transform: translate(2px, -2px);
+                    transform: translate(2px, -2px);
+        }
+        100% {
+            -webkit-transform: translate(0);
+                    transform: translate(0);
+        }
+        }
+        @keyframes vibrate-1 {
+        0% {
+            -webkit-transform: translate(0);
+                    transform: translate(0);
+        }
+        20% {
+            -webkit-transform: translate(-2px, 2px);
+                    transform: translate(-2px, 2px);
+        }
+        40% {
+            -webkit-transform: translate(-2px, -2px);
+                    transform: translate(-2px, -2px);
+        }
+        60% {
+            -webkit-transform: translate(2px, 2px);
+                    transform: translate(2px, 2px);
+        }
+        80% {
+            -webkit-transform: translate(2px, -2px);
+                    transform: translate(2px, -2px);
+        }
+        100% {
+            -webkit-transform: translate(0);
+                    transform: translate(0);
+        }
+        }       
+}
+
+    
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+.line-1{
+    color: $primary-color-text;
+    top: 50%;  
+    border-right: 2px solid $primary-color-text;
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+    animation: typewriter 1.5s steps(15) 1s 1 normal both,
+                blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 7.6em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: $primary-color-text;}
+    to{border-right-color: transparent;}
+}
+
+}

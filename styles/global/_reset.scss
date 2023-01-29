@@ -1,4 +1,4 @@
-
+@import  './mixins';
 
 // GENERAL
 
@@ -18,5 +18,32 @@
     &::-webkit-scrollbar-thumb {
         background-color: var(--text-one);
         border-radius: 3rem;
+    }
+}
+
+body{
+    background-color:  #1b1c1e;
+
+    h1{
+        font-size: 36px;
+        color: $titles-color;
+    }
+
+    h3{
+        font-size: 20px;
+        color: $titles-color;
+
+        text-decoration-line: underline;
+        text-underline-position: under;
+
+        text-decoration: $underline-color solid underline;
+
+        margin-bottom: 20px;
+    }
+    p{  
+        font-size: 16px;
+        color: $p-color;
+        text-align: justify;
+        text-indent: 1em;
     }
 }
