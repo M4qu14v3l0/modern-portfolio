@@ -51,7 +51,6 @@ export default function Skill () {
                             <Image 
                             src={skill.img}
                             alt={skill.name}
-                            quality={100}
                             className="technology-img"
                             />
                         </div>
