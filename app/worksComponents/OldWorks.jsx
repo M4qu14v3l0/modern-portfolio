@@ -26,7 +26,6 @@ export default function OldWorks () {
                                     src={item.img}
                                     alt={item.name}
                                     className="img-card"
-                                    quality={100}
                                 />
                                 <div className="info-card-content">
                                     <h4>{item.name}</h4>
