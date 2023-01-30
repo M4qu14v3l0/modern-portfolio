@@ -28,8 +28,8 @@ export default function Work () {
                 {
                     works.map(item => (
                         <a
-                            src={item.url}
-                            alt={item.name}
+                            href={item.url}
+                            rel={item.name}
                             key={item.id}
                             target="_blank"
                         >
