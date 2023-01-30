@@ -1,7 +1,7 @@
 'use client'
 
-import Collaboration from "../worksComponents/collaboration";
-import OldWorks from "../worksComponents/oldWorks";
+import Collaboration from "../worksComponents/Collaboration";
+import OldWorks from "../worksComponents/OldWorks";
 import Work from "../worksComponents/Work";
 
 

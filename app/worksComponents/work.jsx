@@ -38,9 +38,12 @@ export default function Work () {
                                     src={item.img}
                                     alt={item.name}
                                     className="img-card"
+                                    quality={100}
                                 />
-                                <h4>{item.name}</h4>
-                                <p>{item.description}</p>
+                                <div className="info-card-content">
+                                    <h4>{item.name}</h4>
+                                    <p>{item.description}</p>
+                                </div>
                             </div>
                         </a>
                     ))
