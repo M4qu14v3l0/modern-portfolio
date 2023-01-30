@@ -8,7 +8,7 @@ export default function Work () {
     return(
         <section className="text-about-work">
             <h3>Work</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ab magni esse repellendus pariatur explicabo ex totam error, vero culpa dolorum magnam exercitationem minus, ipsum placeat. Distinctio in eveniet non. ab magni esse repellendus pariatur explicabo ex totam error, vero culpa dolorum magnam exercitationem minus, ipsum placeat. Distinctio in eveniet non</p>
+            <p>Marcelo is a full stack developer based in Arequipa with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. Working on projects he loves is a 100% accuracy of success</p>
             <Link href={'/works'} className="connect-link-container">
             My Portfolio {<ArrowForwardIosIcon className="arrow-ico"/>}
             </Link>
