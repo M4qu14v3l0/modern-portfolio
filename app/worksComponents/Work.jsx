@@ -3,7 +3,6 @@ import Image from "next/image"
 import githubApi from '../assets/github.jpg';
 import idrink from '../assets/idrink.jpg';
 import apigiphy from '../assets/apigiphy.jpg';
-import portfolio from '../assets/portfolio.jpg';
 import realState from '../assets/rs.jpg';
 
 export default function Work () {
@@ -16,8 +15,6 @@ export default function Work () {
         {id:3 , name:'API Giphy' , url:'https://api-gif-consumer.netlify.app/' , img:apigiphy, description:'Do you want to get your favorite Gifs just calling them?'},
 
         {id:4 ,name:'Github API' , url:'https://material-ui-c11y0l58t-m4qu14v3l0.vercel.app/' , img:githubApi, description:'Do you want to see your profile or public profiles of GitHub?'},
-
-        {id:5 , name:'Portfolio v1' , url:'https://marcelo-llerena.netlify.app/' , img:portfolio, description:'My first portfolio as a programmer!'},
 
     ]
 
