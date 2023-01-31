@@ -1,39 +1,51 @@
 @import '../../global/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-
-.text-shpere {
+.group-of-skills-container{
+    display: flex;
     width: 100%;
-    height: 35vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technology-container{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    gap: 5px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out  ;
+    &:hover .technology-img{
+        opacity: 1;
+        z-index: 1;
+    }
+    &:hover p{
+        z-index: -1;
+        opacity: 0.3;
+    }
 
+    .technology-img{
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 50px;
+        height: 50px;
+        opacity: 0.0;
+        transition: all .3s ease-in-out  ;
+    }
+
+    p{
+        text-indent: 0;
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 1;
+    }
 }
-
-.tagcloud {
-    display: inline-block;
-    top: 0;
-    left: 0;
-    font-weight: 500;
-    letter-spacing: 0.0625em;
-    font-size: 0.9em;
-}
-
-/* Change color of each text in sphere on hover   */
-.tagcloud--item {
-    color: $primary-color-text;
-}
-
-.tagcloud--item:hover {
-    color: $titles-color;
-    cursor: pointer;
-}
-
-
-
   // Medium devices (tablets, 768px and up)
   @media (min-width: 768px) {
-    .tagcloud {
 
-        font-size: 1em;
-    }
   }
