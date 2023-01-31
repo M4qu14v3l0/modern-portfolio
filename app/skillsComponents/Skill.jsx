@@ -1,62 +1,52 @@
-import Image from 'next/image';
+'use client'
 
-import django from '../assets/technologies/django.svg';
-import firebase from '../assets/technologies/firebase.svg';
-import graphql from '../assets/technologies/graphql.svg';
-import html from '../assets/technologies/html.svg';
-import javascript from '../assets/technologies/javascript.svg';
-import jira from '../assets/technologies/jira.svg';
-import materialui from '../assets/technologies/materialui.svg';
-import mongodb from '../assets/technologies/mongodb.svg';
-import mysql from '../assets/technologies/mysql.svg';
-import next from '../assets/technologies/next.svg';
-import nodejs from '../assets/technologies/nodejs.svg';
-import python from '../assets/technologies/python.svg';
-import react from '../assets/technologies/react_native.svg';
-import redux from '../assets/technologies/redux.svg';
-import sass from '../assets/technologies/sass.svg';
-import scrum from '../assets/technologies/scrum.svg';
-import typescript from '../assets/technologies/typescript.svg';
+import TagCloud from "TagCloud";
 
+import { useEffect } from 'react';
 
 export default function Skill () {
 
-    const skills = [
-        {name:'django' , img:django},
-        {name:'firebase' , img:firebase},
-        {name:'graphql' , img:graphql},
-        {name:'html' , img:html},
-        {name:'javascript' , img:javascript},
-        {name:'jira' , img:jira},
-        {name:'materialui' , img:materialui},
-        {name:'mongodb' , img:mongodb},
-        {name:'mysql' , img:mysql},
-        {name:'next' , img:next},
-        {name:'nodejs' , img:nodejs},
-        {name:'python' , img:python},
-        {name:'react' , img:react},
-        {name:'redux' , img:redux},
-        {name:'sass' , img:sass},
-        {name:'scrum' , img:scrum},
-        {name:'typescript' , img:typescript},
-    ]
+
+    useEffect(() => {
+    return () => {
+      const container = ".tagcloud";
+      const texts = [
+        "Django",
+        "FireBase",
+        "Sass",
+        "Graphql",
+        "html",
+        "NextJs",
+        "JavaScript",
+        "MaterialUi",
+        "MongoDB",
+        "MySql",
+        "Python",
+        "NodeJs",
+        "React",
+        "Scrum",
+        "Typescript",
+      ];
+
+      const options = {
+        radius: 300,
+        maxSpeed: "normal",
+        initSpeed: "normal",
+        keep: true,
+      };
+
+      TagCloud(container, texts, options);
+    };
+  }, []);
     
     return(
         <section>
             <h3>Skills</h3>
-            <div className="group-of-skills-container">
-                {
-                    skills.map(skill =>(
-                        <div className="technology-container" key={skill.name}>
-                            <Image 
-                            src={skill.img}
-                            alt={skill.name}
-                            className="technology-img"
-                            />
-                        </div>
-                    ))
-                }
+
+            <div className="text-shpere">
+                <span className="tagcloud"></span>       
             </div>
+
         </section>
     )
 }
