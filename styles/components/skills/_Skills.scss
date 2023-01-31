@@ -28,16 +28,16 @@
     height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
 .tagcloud {
     display: inline-block;
     top: 0;
     left: 0;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.0625em;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 /* Change color of each text in sphere on hover   */
@@ -47,6 +47,5 @@
 
 .tagcloud--item:hover {
     color: $titles-color;
-    transition-duration: 0.2s;
     cursor: pointer;
 }

@@ -6,6 +6,8 @@ import Presentation from "./portadaComponents/Presentation";
 import Social from "./portadaComponents/Social";
 import Work from "./portadaComponents/Work";
 
+
+
 export default function HomePage(){
     return(
         <main>

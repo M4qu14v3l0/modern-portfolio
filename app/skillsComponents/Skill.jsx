@@ -42,7 +42,6 @@ export default function Skill () {
     return(
         <section>
             <h3>Skills</h3>
-
             <div className="text-shpere">
                 <span className="tagcloud"></span>       
             </div>
