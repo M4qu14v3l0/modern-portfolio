@@ -56,7 +56,7 @@ body{
     p{  
         font-size: 16px;
         color: $p-color;
-        text-align: justify;
+        text-align: left;
         text-indent: 1em;
     }
 
@@ -206,3 +206,12 @@ body{
 
     }
 }
+
+@media (min-width: 576px) {
+
+  body{
+    p{
+        text-align: justify;
+    }
+  }
+  }
