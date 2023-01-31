@@ -22,5 +22,15 @@ nav{
     a{
         text-decoration: none;
         color: $titles-color;
+        position: relative;
+    }
+
+    .tab-activated{
+        position: absolute;
+        top: 12px;
+        width: 100%;
+        height: 2px;
+        background-color: $titles-color;
     }
 }
+

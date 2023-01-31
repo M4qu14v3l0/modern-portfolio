@@ -1,11 +1,14 @@
+import { Container } from "../components/container/container";
+
 import Skill from "../skillsComponents/Skill";
+
 
 export default function Skills () {
     return(
         <main>
-            <div className="portada-container">
+            <Container>
                 <Skill />
-            </div>
+            </Container>
         </main>
     )
 }

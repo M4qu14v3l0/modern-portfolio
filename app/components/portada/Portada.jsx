@@ -1,4 +1,7 @@
+import marcelo_coding from "../../assets/programming.svg"
+
 export default function Portada () {
+
     return(
         <section className="bg-as">
 

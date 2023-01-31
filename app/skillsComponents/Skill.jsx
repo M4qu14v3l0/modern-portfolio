@@ -18,14 +18,14 @@ export default function Skill () {
         "html",
         "NextJs",
         "JavaScript",
-        "MaterialUi",
+        "MaterialUI",
         "MongoDB",
         "MySql",
         "Python",
         "NodeJs",
-        "React",
+        "ReactJs",
         "Scrum",
-        "Typescript",
+        "TypeScript",
       ];
 
       const options = {

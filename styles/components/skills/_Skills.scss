@@ -35,7 +35,6 @@
     display: inline-block;
     top: 0;
     left: 0;
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
     letter-spacing: 0.0625em;
     font-size: 1.3em;
@@ -43,11 +42,11 @@
 
 /* Change color of each text in sphere on hover   */
 .tagcloud--item {
-    color: #f4a261;
+    color: $primary-color-text;
 }
 
 .tagcloud--item:hover {
-    color: #ff6347;
+    color: $titles-color;
     transition-duration: 0.2s;
     cursor: pointer;
 }
