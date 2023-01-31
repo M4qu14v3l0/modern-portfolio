@@ -5,7 +5,7 @@
     justify-content:center;
 
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 15px;
 
     a{
         cursor: pointer;
@@ -14,8 +14,8 @@
     }
 
     .card-container{
-        width: 230px;
-        height: 300px;
+        width: 200px;
+        height: 250px;
         overflow: hidden;
         z-index: 3;
 
@@ -28,8 +28,8 @@
         .img-card{
             border-radius: 20px;
             position: absolute;
-            width: 230px;
-            height: 300px;
+            width: 200px;
+            height: 250px;
             z-index: -1;
             overflow: hidden;
             object-fit: cover;
@@ -47,8 +47,8 @@
             align-items: center;
 
             // width: 160px ;
-            width: 230px;
-            height: 300px;
+            width: 200px;
+            height: 250px;
             // height: 270px;
         
             padding: 0px 10px;
@@ -64,7 +64,58 @@
             }
         }
     }
-
-
-
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .work-cards-container{
+        display: flex;
+        justify-content:center;
+    
+        flex-wrap: wrap;
+    
+        .card-container{
+            width: 200px;
+            height: 250px;
+            &:hover .info-card-content{
+                opacity: 1;
+                bottom: -50%;
+                transform: translateY(-100px);
+            }
+    
+            .img-card{
+                width: 200px;
+                height: 250px;
+            }
+            
+            .info-card-content{
+                // width: 160px ;
+                width: 200px;
+                height: 250px;
+                // height: 270px;
+            }
+        }
+    }
+
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+
+
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+
+  }
+  
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+
+  }
+  
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+  
+  }

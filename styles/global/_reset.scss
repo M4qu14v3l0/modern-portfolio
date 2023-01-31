@@ -27,6 +27,15 @@ body{
     display: flex;
     flex-direction: column;
 
+    section{
+      &:hover{
+        h3{
+
+          text-decoration: $primary-color-text solid underline;
+        }
+      }
+    }
+
     h1{
         font-size: 36px;
         color: $titles-color;
@@ -35,6 +44,7 @@ body{
     h3{
         font-size: 20px;
         color: $titles-color;
+        transition: .5s ease-in-out;
 
         text-decoration-line: underline;
         text-underline-position: under;
@@ -58,7 +68,8 @@ body{
       
     }
     .programming-img{
-        height: 350px;
+        width: auto;
+        height: 400px;
         animation: Movement 1.5s ease-in-out infinite alternate;
         transition: transform 1.7s ease-in-out;
 

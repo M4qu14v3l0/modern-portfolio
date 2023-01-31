@@ -1,41 +1,42 @@
 'use client'
 
 import TagCloud from "TagCloud";
+import { useEffect , useState } from 'react';
 
-import { useEffect } from 'react';
+
 
 export default function Skill () {
 
-
     useEffect(() => {
+
     return () => {
-      const container = ".tagcloud";
-      const texts = [
-        "Django",
-        "FireBase",
-        "Sass",
-        "Graphql",
-        "html",
-        "NextJs",
-        "JavaScript",
-        "MaterialUI",
-        "MongoDB",
-        "MySql",
-        "Python",
-        "NodeJs",
-        "ReactJs",
-        "Scrum",
-        "TypeScript",
-      ];
+        const container = ".tagcloud";
+        const texts = [
+          "Django",
+          "FireBase",
+          "Sass",
+          "Graphql",
+          "html",
+          "NextJs",
+          "JavaScript",
+          "MaterialUI",
+          "MongoDB",
+          "MySql",
+          "Python",
+          "NodeJs",
+          "ReactJs",
+          "Scrum",
+          "TypeScript",
+        ];
 
-      const options = {
-        radius: 300,
-        maxSpeed: "normal",
-        initSpeed: "normal",
-        keep: true,
-      };
+        const options = {
+          radius: 140,
+          maxSpeed: "normal",
+          initSpeed: "normal",
+          keep: true,
+        };
 
-      TagCloud(container, texts, options);
+        TagCloud(container, texts, options);
     };
   }, []);
     
