@@ -53,16 +53,73 @@ body{
     .bg-as{
 
         height: 400px;
-
+        display: flex;
+        justify-content: center;
       
     }
 
     .programming-img{
         height: 350px;
-        width: 100%;
-        margin: 0 auto;
-         animation: Movement 1.5s ease-in-out infinite alternate;
-         transition: transform 1.7s ease-in-out;
+        animation: Movement 1.5s ease-in-out infinite alternate;
+        transition: transform 1.7s ease-in-out;
+
+        &:hover #code_wall{
+            -webkit-animation: vibrate-1 0.3s linear infinite both;
+	        animation: vibrate-1 0.3s linear infinite both;
+
+            @-webkit-keyframes vibrate-1 {
+                0% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+                20% {
+                  -webkit-transform: translate(-2px, 2px);
+                          transform: translate(-2px, 2px);
+                }
+                40% {
+                  -webkit-transform: translate(-2px, -2px);
+                          transform: translate(-2px, -2px);
+                }
+                60% {
+                  -webkit-transform: translate(2px, 2px);
+                          transform: translate(2px, 2px);
+                }
+                80% {
+                  -webkit-transform: translate(2px, -2px);
+                          transform: translate(2px, -2px);
+                }
+                100% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+              }
+              @keyframes vibrate-1 {
+                0% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+                20% {
+                  -webkit-transform: translate(-2px, 2px);
+                          transform: translate(-2px, 2px);
+                }
+                40% {
+                  -webkit-transform: translate(-2px, -2px);
+                          transform: translate(-2px, -2px);
+                }
+                60% {
+                  -webkit-transform: translate(2px, 2px);
+                          transform: translate(2px, 2px);
+                }
+                80% {
+                  -webkit-transform: translate(2px, -2px);
+                          transform: translate(2px, -2px);
+                }
+                100% {
+                  -webkit-transform: translate(0);
+                          transform: translate(0);
+                }
+              }
+        }
 
         @keyframes Movement {
             from{
@@ -72,11 +129,15 @@ body{
                 transform: translateY(10px);
             }
         }
-        
-        #React{
+
+
+         #React , #React_2 , #React_3{
             animation: rotation 10s infinite linear;
             transform-origin: center;
             transform-box: fill-box;
+
+    
+
             @keyframes rotation {
                 from {
                   transform: rotateZ(0deg);
@@ -84,8 +145,40 @@ body{
                 to {
                   transform: rotateZ(360deg);
                 }
+              }      
+        }
+
+        #head_marcelo{
+            animation: headanimation 1.5s infinite ease-in-out alternate;
+            transform-origin: center;
+            transform-box: fill-box;
+
+            @keyframes headanimation {
+                from {
+                  transform: translate(0px , 0px);
+                }
+                to {
+                  transform: translate(10px ,5px);
+                }
+
               }
         }
+
+        #arm{
+            animation: arm 1s infinite ease-in-out alternate ;
+            transform-origin: center;
+            transform-box: fill-box;
+            @keyframes arm {
+                from {
+                  transform: translate(0px ,0px);
+                }
+                to {
+                  transform: translate(-2px , -3px);
+                }
+
+              }
+        }
+
         #hand{
             animation: handanimation 1.5s infinite ease-in-out alternate ;
             transform-origin: center;
