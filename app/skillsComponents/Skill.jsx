@@ -19,6 +19,7 @@ import redux from '../assets/technologies/redux.svg';
 import sass from '../assets/technologies/sass.svg';
 import scrum from '../assets/technologies/scrum.svg';
 import typescript from '../assets/technologies/typescript.svg';
+import tailwindcss from '../assets/technologies/tailwindcss.svg';
 
 
 const skills = [
@@ -32,13 +33,14 @@ const skills = [
   {name:'MongoDB' , img:mongodb},
   {name:'MySql' , img:mysql},
   {name:'Next' , img:next},
+  {name:'TypeScript' , img:typescript},
   {name:'Node' , img:nodejs},
   {name:'Python' , img:python},
   {name:'React' , img:react},
+  {name:'TailwindCSS' , img:tailwindcss},
   {name:'Redux' , img:redux},
   {name:'Sass' , img:sass},
   {name:'Scrum' , img:scrum},
-  {name:'TypeScript' , img:typescript},
 ]
 
 
