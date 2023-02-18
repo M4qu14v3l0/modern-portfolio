@@ -4,18 +4,23 @@ import githubApi from '../assets/github.jpg';
 import idrink from '../assets/idrink.jpg';
 import apigiphy from '../assets/apigiphy.jpg';
 import realState from '../assets/rs.jpg';
+import airbnb from '../assets/Airbnb.jpg';
+import modernportfolio from '../assets/Modernportfolio.jpg';
 
 export default function Work () {
 
     const works = [
-        {id:1 ,name:'Real State' , url:'https://m4qu14v3l0.github.io/Real-state-template-/' , img:realState, description:"Marcelo's enterprise is a website built to real state company."},
+        {id:1 ,name:'Airbnb clone' , url:'https://airbnb-clon-b6b27gts6-m4qu14v3l0.vercel.app/' , img:airbnb, description:'Airbnb clone developed with Typescript , React18 , Next13 , TailwindCSS'},
 
-        {id:2 ,name:'Waqto' , url:'https://waqto.netlify.app/' , img:idrink, description:'Waqto is a booze delivery app'},
+        {id:2 ,name:'Real State Website' , url:'https://m4qu14v3l0.github.io/Real-state-template-/' , img:realState, description:"Marcelo's enterprise is a website built to real state company."},
 
-        {id:3 , name:'API Giphy' , url:'https://api-gif-consumer.netlify.app/' , img:apigiphy, description:'Do you want to get your favorite Gifs just calling them?'},
+        {id:3 ,name:'E-commerce' , url:'https://waqto.netlify.app/' , img:idrink, description:'Waqto is E-commerce of booze delivery app, developed with React18 , Firebase'},
 
-        {id:4 ,name:'Github API' , url:'https://material-ui-c11y0l58t-m4qu14v3l0.vercel.app/' , img:githubApi, description:'Do you want to see your profile or public profiles of GitHub?'},
+        {id:4 , name:'API Giphy' , url:'https://api-gif-consumer.netlify.app/' , img:apigiphy, description:'Do you want to get your favorite Gifs just calling them?'},
 
+        {id:5 ,name:'Github API' , url:'https://material-ui-c11y0l58t-m4qu14v3l0.vercel.app/' , img:githubApi, description:"User's githubs accounts API, developed with React18, MaterialUI5"},
+
+        {id:6 ,name:'Modern Portfolio' , url:'https://material-ui-c11y0l58t-m4qu14v3l0.vercel.app/' , img:modernportfolio, description:"My new portfolio! minimalist and modern. Developed with React18, Next13 , Sass , FramerMotion"},
     ]
 
     return(
