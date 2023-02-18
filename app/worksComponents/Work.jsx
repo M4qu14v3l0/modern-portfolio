@@ -20,7 +20,7 @@ export default function Work () {
 
         {id:5 ,name:'Github API' , url:'https://material-ui-c11y0l58t-m4qu14v3l0.vercel.app/' , img:githubApi, description:"User's githubs accounts API, developed with React18, MaterialUI5"},
 
-        {id:6 ,name:'Modern Portfolio' , url:'https://material-ui-c11y0l58t-m4qu14v3l0.vercel.app/' , img:modernportfolio, description:"My new portfolio! minimalist and modern. Developed with React18, Next13 , Sass , FramerMotion"},
+        {id:6 ,name:'Modern Portfolio' , url:'https://modern-portfolio-h90kw8y2f-m4qu14v3l0.vercel.app/' , img:modernportfolio, description:"My new portfolio! minimalist and modern. Developed with React18, Next13 , Sass , FramerMotion"},
     ]
 
     return(
