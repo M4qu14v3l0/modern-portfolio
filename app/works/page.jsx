@@ -14,7 +14,6 @@ export default function Works () {
                 <Collaboration />
                 <OldWorks />
             </Container>
-            {/* */}
         </main>
     )
 }
