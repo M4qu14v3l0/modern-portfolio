@@ -10,7 +10,7 @@ import modernportfolio from '../assets/Modernportfolio.jpg';
 export default function Work () {
 
     const works = [
-        {id:1 ,name:'Airbnb clone' , url:'https://airbnb-clon-b6b27gts6-m4qu14v3l0.vercel.app/' , img:airbnb, description:'Airbnb clone developed with Typescript , React18 , Next13 , TailwindCSS'},
+        {id:1 ,name:'Airbnb clone' , url:'https://airbnb-clon-gsozath0l-m4qu14v3l0.vercel.app/' , img:airbnb, description:'Airbnb clone developed with Typescript , React18 , Next13 , TailwindCSS'},
 
         {id:2 ,name:'Real State Website' , url:'https://m4qu14v3l0.github.io/Real-state-template-/' , img:realState, description:"Marcelo's enterprise is a website built to real state company."},
 
