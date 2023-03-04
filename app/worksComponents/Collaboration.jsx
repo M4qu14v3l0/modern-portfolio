@@ -1,11 +1,13 @@
 import Image from "next/image"
 
 import eStadium from '../assets/E-stadium.png';
+import countryAcademy from '../assets/CountryAcademy.png';
 
 export default function Collaboration () {
 
     const works = [
         {id:1 ,name:'E-stadium' , url:'https://e-stadium.vercel.app/' , img:eStadium, description:"Gaming web to participate on tournaments , collaboration with No-Country"},
+        {id:2 ,name:'Country Academy' , url:'https://country-academy.vercel.app/' , img:countryAcademy, description:"Online Courses platform , collaboration with No-Country"},
 
     ]
 
