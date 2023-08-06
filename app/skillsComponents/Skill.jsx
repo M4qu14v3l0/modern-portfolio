@@ -20,6 +20,10 @@ import sass from '../assets/technologies/sass.svg'
 import scrum from '../assets/technologies/scrum.svg'
 import typescript from '../assets/technologies/typescript.svg'
 import tailwindcss from '../assets/technologies/tailwindcss.svg'
+import dart from '../assets/technologies/dart.svg'
+import flutter from '../assets/technologies/flutterio.svg'
+import gsap from '../assets/technologies/gsap.svg'
+import svelte from '../assets/technologies/sveltekit.svg'
 
 const skills = [
   { name: 'Django', img: django },
@@ -39,6 +43,10 @@ const skills = [
   { name: 'TailwindCSS', img: tailwindcss },
   { name: 'Redux', img: redux },
   { name: 'Sass', img: sass },
+  { name: 'Dart', img: dart },
+  { name: 'Flutter', img: flutter },
+  { name: 'Gsap', img: gsap },
+  { name: 'Sveltekit', img: svelte },
   { name: 'Scrum', img: scrum }
 ]
 
