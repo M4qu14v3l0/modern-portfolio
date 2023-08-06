@@ -1,0 +1,36 @@
+@import  '../../global/mixins';
+
+
+.sub-section{
+    text-indent: 1em;
+}
+
+.header-company{
+    display: flex;
+
+    gap: 6px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    
+    h2{
+        color: $titles-color;
+        margin: 0;
+        font-size: 16px;
+        opacity: 0.85;
+    }
+
+    .date-work{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span{
+        color: $p-color;
+        opacity: 0.85;
+        font-size: 14px;
+    }
+}
