@@ -1,14 +1,13 @@
-import { Container } from "../components/container/container";
+import { Container } from '../components/container/container'
 
-import Skill from "../skillsComponents/Skill";
-
+import Skill from '../skillsComponents/Skill'
 
 export default function Skills () {
-    return(
-        <main>
-            <Container>
-                <Skill />
-            </Container>
-        </main>
-    )
+  return (
+    <main>
+      <Container>
+        <Skill />
+      </Container>
+    </main>
+  )
 }
